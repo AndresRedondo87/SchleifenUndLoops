@@ -195,6 +195,53 @@ namespace SchleifenUndLoops
                 Console.WriteLine($"Die Durchschnitt von KEINE Gültige Noten kann nicht berechnet werden!!!");
             }
             Console.ReadKey();
+
+
+            /////////////////////////////////////////////-----------------------------/// LEHRER LÖSUNG
+            ///// Variable die den Inhalt der Eingabe speichert.
+            string input = "0";
+            // Zähler für die Anzahl der Einträge
+            int count = 0;
+            // Gesamtwert der Noten miteinander addiert
+            int total = 0;
+            // Aktuelle eingegebene Zahl als Integer
+            int currentNumber = 0;
+
+            Console.WriteLine("\n\nLEHRER LÖSUNG");
+
+            while (input != "-1")
+            {
+                Console.WriteLine("Letzte Zahl war {0}", currentNumber);
+                Console.WriteLine("Bitte trage die nächste Note ein!");
+                Console.WriteLine("Anzahl der bisherigen Einträge ist {0}", count);
+                Console.WriteLine("Bitte gib -1 ein, sobald du den Durchschnitt ermitteln lassen möchtest.");
+                // Benutzereingabe auslesen
+                input = Console.ReadLine();
+                if (input.Equals("-1"))
+                {
+                    Console.WriteLine("-------------------------------------------------------");
+                    // Durchschnitt = Gesamtwert/AnzahlDerWerte
+                    double average = (double)total / (double)count;
+                    Console.WriteLine("Der Durchschnitt deiner Schüler ist {0}", average);
+                }
+                if (int.TryParse(input, out currentNumber) && currentNumber > 0 && currentNumber < 7)
+                {
+                    total += currentNumber;
+                }
+                else
+                {
+                    if (!(input.Equals("-1")))
+                    {
+                        Console.WriteLine("Bitte trage einen Wert zwischen 1 und 6 ein");
+                    }
+                    continue;   //wichtig hier um den count++ zu vermeiden
+                }
+
+                count++;
+            }
+
+            Console.ReadKey();
+            //////////////////////////////////////////////-----------------------------/// LEHRER LÖSUNG ENDE
         }
 
         /// <summary>
