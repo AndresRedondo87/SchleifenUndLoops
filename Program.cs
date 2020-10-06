@@ -155,16 +155,20 @@ namespace SchleifenUndLoops
             //-------------------------------------------------- Break and Continue Ende
 
             //-------------------------------------------------- Herausforderung Loops - Durchschnitt
-                ////Stelle Dir vor, Du seist ein Entwickler und bekommst einen Job, in dem Du ein Programm für einen Lehrer erstellen musst.
-                ////Er braucht ein in c# geschriebenes Programm, das die durchschnittliche Punktzahl seiner Schüler berechnet. 
-                ////Er möchte also jede Punktzahl einzeln eingeben können und dann nach Eingabe von -1 die endgültige Durchschnittspunktzahl erhalten.
-                
-                ////Das Tool sollte also prüfen, ob der Eintrag eine Zahl ist und diese zur Summe addieren. 
-                ////Schließlich, wenn er fertig ist, sollte das Programm auf die Konsole schreiben, was die durchschnittliche Punktzahl ist.
-                ////Die eingegebenen Zahlen sollten nur zwischen 1 und 6 liegen.Stellen Sie sicher, dass das Programm nicht abstürzt, 
-                ////wenn der Lehrer einen falschen Wert eingibt.
-                
-                ////Teste Dein Programm gründlich.
+            ////Stelle Dir vor, Du seist ein Entwickler und bekommst einen Job, in dem Du ein Programm für einen Lehrer erstellen musst.
+            ////Er braucht ein in c# geschriebenes Programm, das die durchschnittliche Punktzahl seiner Schüler berechnet. 
+            ////Er möchte also jede Punktzahl einzeln eingeben können und dann nach Eingabe von -1 die endgültige Durchschnittspunktzahl erhalten.
+
+            ////Das Tool sollte also prüfen, ob der Eintrag eine Zahl ist und diese zur Summe addieren. 
+            ////Schließlich, wenn er fertig ist, sollte das Programm auf die Konsole schreiben, was die durchschnittliche Punktzahl ist.
+            ////Die eingegebenen Zahlen sollten nur zwischen 1 und 6 liegen.Stellen Sie sicher, dass das Programm nicht abstürzt, 
+            ////wenn der Lehrer einen falschen Wert eingibt.
+
+            ////Teste Dein Programm gründlich. 
+            ///
+
+
+            //-------------------------------------------------- Herausforderung Loops - Durchschnitt ENDE
 
 
             Console.ReadKey();
